@@ -3,8 +3,8 @@ import 'package:flutter/widgets.dart';
 import 'package:panache_core/panache_core.dart';
 import 'package:panache_ui/panache_ui.dart';
 import 'package:panache_web/src/web_link_service.dart';
-import 'package:scoped_model/scoped_model.dart';
 import 'package:provider/provider.dart';
+import 'package:scoped_model/scoped_model.dart';
 
 import 'src/theme_exporter_web.dart';
 import 'src/web_local_data.dart';
@@ -46,9 +46,7 @@ class PanacheApp extends StatelessWidget {
             '/editor': (context) => PanacheEditorScreen(),
           },
         ),
-        providers: <SingleChildCloneableWidget>[
-          Provider<LinkService>.value(value: WebLinkService())
-        ],
+        providers: [Provider<LinkService>.value(value: WebLinkService())],
       ),
     );
   }

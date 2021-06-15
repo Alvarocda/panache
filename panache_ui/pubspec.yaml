@@ -14,7 +14,7 @@ dependencies:
   panache_core:
     path: ../panache_core
 
-  provider: ^3.1.0
+  provider: 5.0.0
 
   #panache_services:
     #path: ../panache_services
